@@ -1,8 +1,7 @@
 app-id: net.mullvad.mullvadvpn
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
-base: org.freedesktop.Sdk
-base-version: '24.08'
+sdk: org.freedesktop.Sdk
 command: mullvad
 separate-locales: false
 finish-args:
