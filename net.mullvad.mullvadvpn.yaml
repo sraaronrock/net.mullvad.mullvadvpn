@@ -3,8 +3,6 @@ runtime: org.freedesktop.Platform
 runtime-version: '25.08'
 base: org.freedesktop.Sdk
 base-version: '25.08'
-sdk: org.freedesktop.Sdk
-sdk-version: '25.08'
 command: mullvad
 separate-locales: false
 finish-args:
