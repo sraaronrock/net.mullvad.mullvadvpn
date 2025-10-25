@@ -11,7 +11,7 @@ if [ ! -f "net.mullvad.mullvadvpn.yaml" ]; then
 fi
 
 echo "Cleaning previous build..."
-rm -rf build-dir
+rm -rf build-dir .flatpak-builder
 
 echo "Checking dependencies..."
 if ! command -v flatpak-builder &> /dev/null; then
@@ -22,6 +22,7 @@ fi
 
 echo "Starting build process..."
 echo "This may take several minutes..."
+echo "Downloading Mullvad VPN for your architecture..."
 flatpak-builder --force-clean --install-deps-from=flathub build-dir net.mullvad.mullvadvpn.yaml
 
 echo ""
@@ -32,6 +33,10 @@ echo "  ./test.sh"
 echo ""
 echo "Generated files:"
 echo "  build-dir/ - Build directory"
+echo ""
+echo "Supported architectures:"
+echo "  - x86_64 (AMD64)"
+echo "  - aarch64 (ARM64)"
 echo ""
 echo "To install on system:"
 echo "  flatpak-builder --repo=repo --install build-dir net.mullvad.mullvadvpn.yaml"
