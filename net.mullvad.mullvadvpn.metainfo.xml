@@ -22,10 +22,6 @@
             <caption>Server locations</caption>
             <image type="source"></image>
         </screenshot>
-        <screenshot>
-            <caption>Multi-hop locations</caption>
-            <image type="source"></image>
-    </screenshots>
     <description>
         <p><em>Protect yourself with Mullvad VPN for Linux!</em></p>
         <p>Mullvad VPN app will protect you on both public and home Wi-Fi. It offers a VPN with global server infrastructure, WireGuard protocol, and multi-hop servers.</p>
