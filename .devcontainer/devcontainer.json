@@ -1,11 +1,6 @@
 {
   "name": "Flatpak Builder - Mullvad VPN",
   "image": "ubuntu:22.04",
-  "features": {
-    "ghcr.io/devcontainers/features/flatpak:1": {
-      "version": "latest"
-    }
-  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -21,8 +16,5 @@
     "8080": {
       "label": "Flathub Test Server"
     }
-  },
-  "mounts": [
-    "source=${localWorkspaceFolder}/.devcontainer,target=/workspace/.devcontainer,type=bind,consistency=cached"
-  ]
+  }
 }
