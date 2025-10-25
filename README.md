@@ -1,4 +1,4 @@
-# Mullvad VPN Flathub
+# Mullvad VPN Flatpak
 
 **Important: This Flathub package is not affiliated with or endorsed by the Mullvad developers. It is solely maintained by the Flathub community. Please direct any issues to the issue tracker provided.**
 
@@ -6,7 +6,7 @@ To build and install locally, first install `flatpak-builder` with your package 
 Then run:
 
 ```
-flatpak-builder build net.mullvad.mullvadvpn.json --force-clean --user --install
+flatpak-builder build net.mullvad.mullvadvpn.yaml --force-clean --ccache --user --install
 ```
 
 ## Contributing
