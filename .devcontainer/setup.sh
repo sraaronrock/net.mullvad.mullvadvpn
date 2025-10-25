@@ -6,8 +6,8 @@ echo "Setting up Flatpak environment for Mullvad VPN..."
 echo "Updating system..."
 apt update
 
-echo "Installing additional tools..."
-apt install -y curl wget git
+echo "Installing Flatpak and dependencies..."
+apt install -y flatpak flatpak-builder curl wget git
 
 echo "Configuring Flathub..."
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -25,8 +25,3 @@ echo "Available commands:"
 echo "  ./build.sh          - Build the Flatpak package"
 echo "  ./test.sh           - Test the application"
 echo "  flatpak-builder --help - Flatpak builder help"
-echo ""
-echo "Project files:"
-echo "  net.mullvad.mullvadvpn.yaml     - Package configuration"
-echo "  net.mullvad.mullvadvpn.metainfo.xml - Application metadata"
-echo "  net.mullvad.mullvadvpn.desktop  - Desktop file"
