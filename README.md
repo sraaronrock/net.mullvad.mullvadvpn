@@ -8,3 +8,6 @@ Then run:
 ```
 flatpak-builder build net.mullvad.mullvadvpn.json --force-clean --ccache --user --install
 ```
+
+## Contributing
+Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
