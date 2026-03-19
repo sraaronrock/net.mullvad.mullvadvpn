@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop-application">
+<component type="console-application">
     <id>net.mullvad.mullvadvpn</id>
 
-    <name>Mullvad VPN</name>
-    <summary>Secure VPN service that helps keep your online activity, identity, and location private!</summary>
+    <name>Mullvad VPN (CLI)</name>
+    <summary>Mullvad VPN client running inside a Flatpak sandbox.</summary>
     <url type="homepage">https://mullvad.net/</url>
     <url type="contact">https://mullvad.net/support/</url>
 
@@ -13,37 +13,17 @@
         <name>Mullvad VPN AB</name>
     </developer>
     <content_rating type="oars-1.1"/>
-    <screenshots>
-        <screenshot type="default">
-            <caption>Mullvad VPN interface</caption>
-            <image type="source"></image>
-        </screenshot>
-        <screenshot>
-            <caption>Server locations</caption>
-            <image type="source"></image>
-        </screenshot>
     <description>
-        <p><em>Protect yourself with Mullvad VPN for Linux!</em></p>
-        <p>Mullvad VPN app will protect you on both public and home Wi-Fi. It offers a VPN with global server infrastructure, WireGuard protocol, and multi-hop servers.</p>
-        <p>Independently audited by Cure53, Mullvad VPN doesn't track your activity. Mullvad has 600+ servers in 40+ countries with no logging policy. That guarantees that your browsing is seamless, safe, and private.</p>
-        <p><em>Secure your digital life:</em></p>
-        <p>Pay with cash or cryptocurrency for maximum anonymity. No email required, no personal data collected. Connect &amp; protect all your devices with Mullvad VPN.</p>
-        <p><em>Safeguard your data &amp; privacy:</em></p>
-        <p>Your ISP can see the websites you visit and the products you look for. With a VPN and its end-to-end encryption, your browsing remains private.</p>
-        <p>Mullvad has a strict no-logs policy, proven by audits, which ensures we don't see or collect your personal information, online activity, or location.</p>
-        <p><em>Stay safe on public Wi-Fi:</em></p>
-        <p>If you have any questions, contact us directly at <em>support@mullvad.net</em> or via support portal.</p>
+        <p>This Flatpak provides the official Mullvad VPN command-line client inside a Flatpak sandbox.</p>
+        <p>It does <em>not</em> include or run a privileged VPN daemon. To establish a VPN tunnel you must run the official Mullvad daemon on the host system (outside Flatpak) and expose its RPC socket under <code>/run/mullvad-vpn</code>.</p>
+        <p>The Flatpak is useful on systems where you prefer Flatpak packaging for user tools, while keeping the actual VPN tunnel management in a system daemon with appropriate privileges.</p>
+        <p>This package is not affiliated with or endorsed by Mullvad VPN AB. It only repackages the official Mullvad binaries into a Flatpak manifest.</p>
     </description>
     <categories>
         <category>Utility</category>
     </categories>
-    <launchable type="desktop-id">net.mullvad.mullvadvpn.desktop</launchable>
-    <branding>
-        <color type="primary" scheme_preference="light">#1E88E5</color>
-        <color type="primary" scheme_preference="dark">#0D47A1</color>
-</branding>
     <releases>
-        <release version="2025.10" date="2025-10-25">
+        <release version="2026.1" date="2026-03-16">
             <description>See https://github.com/mullvad/mullvadvpn-app/releases for more information</description>
         </release>
     </releases>
