@@ -1,6 +1,8 @@
-# net.mullvad.mullvadvpn (Flatpak)
+# MullvadVPN (Flatpak)
 
 Unofficial Flatpak for the **Mullvad VPN** desktop client on Linux.
+
+## STATUS: ❌ - The Flatpak version of Mullvad VPN doesn’t work because the Mullvad system daemon performs strict ownership and permission checks that require direct access to the host system. Flatpak’s sandboxing model blocks the app from interacting with the system-level components the daemon expects, so the client cannot work properly.
 
 This package provides the **official Mullvad VPN desktop application (GUI + CLI)** running inside a Flatpak sandbox.
 To establish a VPN tunnel it requires a **Mullvad VPN daemon** running on the host system (outside Flatpak).
