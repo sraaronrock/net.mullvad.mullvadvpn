@@ -1,8 +1,8 @@
 app-id: net.mullvad.mullvadvpn
 base: org.freedesktop.Sdk
-base-version: '24.08'
+base-version: '25.08'
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: mullvad
 separate-locales: false
@@ -28,15 +28,15 @@ modules:
       - install -Dm644 net.mullvad.mullvadvpn.metainfo.xml $FLATPAK_DEST/share/metainfo/net.mullvad.mullvadvpn.metainfo.xml
     sources:
       - type: extra-data
-        url: https://github.com/mullvad/mullvadvpn-app/releases/download/2025.10/MullvadVPN-2025.10_amd64.deb
-        sha256: 3afd935b8e4c37fb7e746b87f884dbca6ee19efdba524daebf0d25238e17bf11
-        size: 108521784
+        url: https://github.com/mullvad/mullvadvpn-app/releases/download/2025.14/MullvadVPN-2025.14_amd64.deb
+        sha256: 247b981e2e2e047ccca296b8e62a70b1dc7fdcec7f17137795884100240e0a41
+        size: 111043256
         only-arches: [x86_64]
         filename: mullvad.deb
       - type: extra-data
-        url: https://github.com/mullvad/mullvadvpn-app/releases/download/2025.10/MullvadVPN-2025.10_arm64.deb
-        sha256: ed3abb02e575590f9eca0d5772db74995eba69e6bdb214b63ef8f38abe654e56
-        size: 101683656
+        url: https://github.com/mullvad/mullvadvpn-app/releases/download/2025.14/MullvadVPN-2025.14_arm64.deb
+        sha256: 9a20a1d71eac09c01b83d897ed227361cc49f0321054d76b83a6f7f61b7c813c
+        size: 103917316
         only-arches: [aarch64]
         filename: mullvad.deb
       - type: file
